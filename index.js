@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const router = require('./productAPI');
+// const router = require('./productAPI');
 const products = require('./data.json');
 const hbs = require('hbs');
 
