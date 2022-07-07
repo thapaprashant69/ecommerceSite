@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.nav-container{
+    display:flex; 
+    justify-content: right;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+nav div div{
+    margin:30px;
+}
+
+.store-logo{
+    width: 100px;
+    height:75px;
+    border-radius: 20px;
+}
+
+/* Footer  */
+footer{
+    height:70px;
+    background: wheat;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:100px){
+    .nav-container{
+        flex-direction: column;
+        padding-top:20px;
+    }
+    img{
+        width:80%;
+    }
+}
+
+@media (min-width:750px){
+    .nav-container{
+        display:flex;   
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        margin: auto;
+        padding:10px 40px;
+    }
+
+    .store-logo{
+        position:absolute;
+        left:100px;
+        top: 14px;
+    }
+
+    .product-container{
+        width: 88%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 400px;
+    }
+}
+
+@media (min-width:900px){
+    .nav-container{
+        display:flex; 
+        flex-direction: row;  
+        justify-content: right;
+        align-items: center;
+        padding:10px auto;
+        margin: 40px 25px;
+    }
+
+    .store-logo{
+        position:absolute;
+        left:150px;
+        top: 52px;
+    }
+
+    img{
+        width: 400px;
+    }
+
+    .product-container{
+        width: 800px;
+
+    }
+}
+
+
+/* Content design  */
+img{
+    border-radius: 10px;
+    transition: 1s;
+}
+
+img:hover{
+    transform: scale3d(1.1, 1.1, 0.1);
+    border: 1px solid salmon;
+}
+
+.product-container{
+    background-color: aliceblue;
+    margin:10px auto 100px;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid salmon;
+    text-align: center;
+    transition: 1s;
+}
+
+.product-container:hover{
+    box-shadow: 0 0 5px 10px burlywood;
+}
+
+.title{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.price{
+    font-size: 25px;
+    color: blueviolet;
+    padding:10px;
+
+}
+
+.rating{
+    padding-bottom: 8px;
+    font-size: 21px;
+}
+
+.details{
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: left;
+}
